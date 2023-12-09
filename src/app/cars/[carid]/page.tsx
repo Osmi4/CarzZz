@@ -46,7 +46,7 @@ export default function CarLookupPage({
   ];
 
   return (
-    <div className="mx-[50px] grid grid-cols-2 items-center gap-[50px] h-screen grid-rows-[80px_700px]">
+    <div className="mx-[50px] lg:grid flex flex-col grid-cols-2 items-center gap-[50px] h-screen grid-rows-[80px_700px]">
       <div className="col-span-2 self-start mt-[30px]">
         <h1 className="text-7xl text-center font-semibold">
           {currentCar.title}

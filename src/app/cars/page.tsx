@@ -1,6 +1,8 @@
 "use client";
 
-import { Card, CardBody, CardFooter, Image, Divider } from "@nextui-org/react";
+import { Card, CardBody, CardFooter } from "@nextui-org/card";
+import { Image } from "@nextui-org/image";
+import { Divider } from "@nextui-org/divider";
 import { useRouter } from "next/navigation";
 
 type Car = {

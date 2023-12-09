@@ -41,7 +41,7 @@ export default function Home() {
   };
 
   return (
-    <div className="text-center text-5xl font-bold grid grid-cols-2">
+    <div className="text-center lg:text-5xl font-bold grid grid-cols-2">
       <TypeAnimation
         sequence={[
           "Looking for easy car renting app?",
@@ -60,10 +60,10 @@ export default function Home() {
         repeat={0}
         className="col-span-2"
       />
-      <div className="col-span-2 flex flex-row justify-center">
+      <div className="col-span-2 flex flex-col lg:flex-row justify-center">
         <Card
           isFooterBlurred
-          className="h-[400px] aspect-square sm:mx-[50px] sm:mt-[150px]"
+          className="lg:h-[400px] h-[200px] aspect-square lg:mx-[50px] lg:mt-[150px] mt-[10px] mx-[20px]"
         >
           <CardHeader className="absolute z-10 top-1 flex-col items-start">
             <p className="text-tiny text-white/60 uppercase font-bold">
@@ -103,10 +103,9 @@ export default function Home() {
         </Card>
         <Card
           isFooterBlurred
-          className="h-[600px] aspect-16/9 sm:mx-[50px] sm:mt-[50px]"
+          className="lg:h-[600px] h-[250px] aspect-16/9 lg:mx-[50px] lg:mt-[50px] mt-[10px] mx-[20px]"
         >
-          {/* bg-[#2a2e39] */}
-          <CardHeader className="absolute z-10 flex gap-3 flex-row bg-slate-700 items-center justify-start pl-[30px]">
+          <CardHeader className="absolute z-10 flex gap-3 flex-row bg-[#2a2e39] items-center justify-start lg:pl-[30px]">
             <Image
               alt="CarzZz logo"
               height={40}
@@ -114,13 +113,9 @@ export default function Home() {
               src="/icon.png"
               width={40}
             />
-            <div className="flex flex-col">
-              <p className="text-tiny text-white/60">
-                Various cars for different tastes.
-              </p>
-              <p className="text-tiny text-white/60">
-                All of you will find your favorite.
-              </p>
+            <div className="flex flex-col text-[10px] lg:text-xs text-white/60">
+              <p>Various cars for different tastes.</p>
+              <p>All of you will find your favorite.</p>
             </div>
             <Button
               radius="full"
@@ -149,7 +144,7 @@ export default function Home() {
         </Card>
         <Card
           isFooterBlurred
-          className="h-[400px] aspect-square sm:mx-[50px] sm:mt-[150px]"
+          className="lg:h-[400px] h-[200px] aspect-square lg:mx-[50px] lg:mt-[150px] mt-[10px] mx-[20px]"
         >
           <CardHeader className="absolute z-10 top-1 flex-col items-start">
             <p className="text-tiny text-white/60 uppercase font-bold">

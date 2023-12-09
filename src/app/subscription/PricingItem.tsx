@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react";
+import { Button } from "@nextui-org/button";
 
 export default function PricingItem({
   name,
@@ -32,7 +32,7 @@ export default function PricingItem({
       <Button
         color="primary"
         variant="shadow"
-        className="group-hover:bg-amber-600 font-bold w-32 py-3 px-6 rounded-3xl"
+        className="group-hover:bg-amber-600 font-bold w-32 top-[70px] px-6 rounded-3xl"
         onPress={onSignup}
       >
         Sign up
