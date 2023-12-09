@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Providers } from "./providers";
 import Searchbar from "./Searchbar";
 import HamMenu from "./HamMenu";
+import { Analytics } from "@vercel/analytics/react";
 
 import Head from "next/head";
 export const metadata: Metadata = {
@@ -40,6 +41,7 @@ export default function RootLayout({
             </div>
           </div>
           {children}
+          <Analytics />
         </Providers>
       </body>
     </html>
