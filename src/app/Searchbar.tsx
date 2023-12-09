@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { SearchIcon } from "./SearchIcon";
-import { list } from "./cars/page";
+import { list } from "./CarList";
 import Link from "next/link";
 
 const Searchbar = () => {
