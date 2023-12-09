@@ -36,7 +36,7 @@ const Searchbar = () => {
       {activeSearch.length > 0 && (
         <div className="hidden group-focus-within:flex absolute top-[60px] p-4 bg-slate-800 text-white w-full rounded-xl left-1/2 -translate-x-1/2 flex-col gap-2">
           {activeSearch.map((s: { title: string; id: string }) => (
-            <span>
+            <span key={s.id}>
               <Link href={`/cars/${s.id}`}>{s.title}</Link>
             </span>
           ))}

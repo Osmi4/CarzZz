@@ -22,7 +22,7 @@ export default function Home() {
     }, 5000);
 
     return () => clearInterval(int);
-  }, []);
+  }, [imageList.length]);
 
   const changeImage = (page: number) => {
     setPage(page - 1);
@@ -168,7 +168,9 @@ export default function Home() {
                 src="/porsche-logo.png"
               />
               <div className="flex flex-col">
-                <p className="text-tiny text-white/60">Customers' Favorite</p>
+                <p className="text-tiny text-white/60">
+                  Customers&apos; Favorite
+                </p>
                 <p className="text-tiny text-white/60"></p>
               </div>
             </div>
