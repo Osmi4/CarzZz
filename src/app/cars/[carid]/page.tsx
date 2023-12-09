@@ -3,7 +3,7 @@
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { RadioGroup, Radio } from "@nextui-org/radio";
 import { useState } from "react";
-import { list } from "../page";
+import { list } from "../../CarList";
 import Image from "next/image";
 import { Card, CardHeader, CardBody } from "@nextui-org/card";
 import { Pagination } from "@nextui-org/pagination";
