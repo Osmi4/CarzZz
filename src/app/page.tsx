@@ -60,7 +60,7 @@ export default function Home() {
         repeat={0}
         className="col-span-2"
       />
-      <div className="col-span-2 flex flex-col lg:flex-row justify-center">
+      <div className="col-span-2 flex flex-col lg:flex-row justify-center gap-[20px] mt-[8px] lg:mt-0">
         <Card
           isFooterBlurred
           className="lg:h-[400px] h-[200px] aspect-square lg:mx-[50px] lg:mt-[150px] mt-[10px] mx-[20px]"
@@ -132,7 +132,35 @@ export default function Home() {
             className="z-0 w-full h-full object-cover"
             src={imageList[page]}
           />
-          <CardFooter className="absolute flex gap-2 items-center justify-center bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
+          <div className="lg:invisible">
+            <div className="z-10 absolute bottom-[90px] left-1">
+              <span className="transition-transform hover:-translate-x-1 motion-reduce:transform-none cursor-pointer">
+                <i
+                  onClick={() => {
+                    setPage((prevPage) => {
+                      if (prevPage === 0) return 2;
+                      return prevPage - 1;
+                    });
+                  }}
+                  className="inline-block border-solid border-slate-600 border-t-0 border-r-[3px] border-b-[3px] border-l-0 p-[3px] rotate-[135deg]"
+                />
+              </span>
+            </div>
+            <div className="z-10 absolute bottom-[90px] right-1">
+              <span className="inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer">
+                <i
+                  onClick={() => {
+                    setPage((prevPage) => {
+                      if (prevPage === 2) return 0;
+                      return prevPage + 1;
+                    });
+                  }}
+                  className="inline-block border-solid border-slate-600 border-t-0 border-r-[3px] border-b-[3px] border-l-0 p-[3px] -rotate-45"
+                />
+              </span>
+            </div>
+          </div>
+          <CardFooter className="invisible lg:visible absolute flex gap-2 items-center justify-center bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
             <Pagination
               loop
               showControls
@@ -144,7 +172,7 @@ export default function Home() {
         </Card>
         <Card
           isFooterBlurred
-          className="lg:h-[400px] h-[200px] aspect-square lg:mx-[50px] lg:mt-[150px] mt-[10px] mx-[20px]"
+          className="lg:h-[400px] h-[200px] aspect-square lg:mx-[50px] lg:mt-[150px] mt-[10px] mx-[20px] mb-[20px]"
         >
           <CardHeader className="absolute z-10 top-1 flex-col items-start">
             <p className="text-tiny text-white/60 uppercase font-bold">

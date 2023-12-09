@@ -15,7 +15,7 @@ export default function AboutPage() {
           alt=""
         />
       </div>
-      <Card className="z-10 absolute max-w-[400px] bg-[#2a2e39] top-[300px]">
+      <Card className="z-10 absolute max-w-[400px] bg-[#2a2e39] lg:top-[300px] w-[350px] translate-y-1/2">
         <CardHeader className="flex gap-3">
           <Image alt="CarzZz logo" height={40} src="/icon.png" width={40} />
           <div className="flex flex-col">

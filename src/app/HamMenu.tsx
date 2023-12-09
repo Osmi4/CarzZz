@@ -20,9 +20,9 @@ export default function HamMenu() {
           setNavigation((prevState) => !prevState);
         }}
       >
-        <div className="w-8 h-0.5 bg-slate-800"></div>
-        <div className="w-8 h-0.5 bg-slate-800"></div>
-        <div className="w-8 h-0.5 bg-slate-800"></div>
+        <div className="w-8 h-0.5 bg-slate-900"></div>
+        <div className="w-8 h-0.5 bg-slate-900"></div>
+        <div className="w-8 h-0.5 bg-slate-900"></div>
       </div>
       {navigation && <Navbar />}
     </div>

@@ -112,7 +112,7 @@ export default function CarLookupPage({
             </div>
           </AccordionItem>
           <AccordionItem key="3" aria-label="Choose Time" title="Choose Time">
-            Random text
+            Not implemented yet
           </AccordionItem>
         </Accordion>
         {selectedColor && (

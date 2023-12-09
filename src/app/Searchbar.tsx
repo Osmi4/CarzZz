@@ -21,7 +21,7 @@ const Searchbar = () => {
   };
 
   return (
-    <form className="lg:w-[500px] w-[150px] relative z-20 group">
+    <form className="lg:w-[500px] w-[250px] relative z-20 group">
       <div className="relative">
         <input
           type="search"
