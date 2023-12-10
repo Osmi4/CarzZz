@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./NavBar";
-import Image from "next/image";
 import { Providers } from "./providers";
 import Searchbar from "./Searchbar";
 import HamMenu from "./HamMenu";
 import { Analytics } from "@vercel/analytics/react";
+import Logo from "./Logo";
 
 import Head from "next/head";
 export const metadata: Metadata = {
@@ -30,9 +30,7 @@ export default function RootLayout({
         <Providers>
           <div className="bg-[#2a2e39] flex justify-between items-center gap-5 antialiased px-5 py-2 text-white">
             <HamMenu />
-            <div className="lg:ml-36 invisible lg:visible">
-              <Image src="/icon.png" width={60} height={60} alt="CarzZz" />
-            </div>
+            <Logo />
             <div className="hidden lg:flex">
               <Navbar />
             </div>
